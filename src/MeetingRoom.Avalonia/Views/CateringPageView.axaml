@@ -1,0 +1,44 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MeetingRoom.Avalonia.Views.CateringPageView">
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <!-- Title -->
+            <TextBlock FontWeight="Bold" FontSize="20">Catering Order</TextBlock>
+            
+            <!-- List of Available Items -->
+            <TextBlock Margin="0 10">Select items to order:</TextBlock>
+            <ComboBox Width="300" PlaceholderText="Select an item"/>
+
+            <!-- Quantity Selector -->
+            <TextBlock Margin="0 10">Quantity:</TextBlock>
+            <NumericUpDown Width="100" Minimum="1" Maximum="100" />
+            <TextBlock Margin="0 20">Notes for this order:</TextBlock>
+            <TextBox Width="400" Height="100" AcceptsReturn="True"/>
+            <Button Content="Add to Order" Width="120" Margin="0 0 10 0" />
+            <!-- List of Items to Order -->
+            <TextBlock Margin="0 20 0 10">Items in your order:</TextBlock>
+            
+            <ListBox Height="150">
+            
+            </ListBox>
+            <!-- Buttons -->
+            
+                
+                <Button Content="Submit Order" Width="120"/>
+            
+
+            <!-- Divider -->
+            <Separator Margin="0 20"/>
+
+            <!-- Past Orders Section -->
+            <TextBlock FontWeight="Bold" FontSize="16" Margin="0 10">Past Orders Status</TextBlock>
+
+            <Button>Cancel</Button>
+            <Button>Clear</Button>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
